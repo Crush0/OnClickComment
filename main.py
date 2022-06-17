@@ -121,7 +121,7 @@ def startComment(hrefs, user_):
 if len(sys.argv) != 3:
     print('启动参数错误')
     exit(0)
-user = start(sys.argv[0], sys.argv[1])
+user = start(sys.argv[1], sys.argv[2])
 ret = getSubjectList()
 startComment(ret, user)
 session.close()
